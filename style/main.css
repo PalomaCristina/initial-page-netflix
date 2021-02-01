@@ -1,0 +1,134 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elemento principal*/
+body{
+    background: var(--preta);
+    font-family: 'arial', Times, serif;
+    color: white;
+}
+ 
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+}
+
+header .container{
+    display:flex;
+    align-items: center;
+}
+    
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa-blindspot.jpg');
+    background-attachment: fixed; /*usando paralax*/
+      
+    height:400px;
+    background-size:cover;
+    
+    display: flex; /*organiza a caixa na horizontal, um ao lado do outro*/
+    flex-direction: column; /*coloca os itens um abaixo do outro, como coluna*/
+    justify-content: center; /*centraliza os itens no meio da coluna*/
+    align-items: flex-start; /*começa sempre da esquerda para a direita (em direção ao meio)*/
+}
+
+.filme-secundario {
+    font-size:16px;
+    background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/wallpaper-badboys.jpg');
+    background-attachment: fixed;
+      
+    height:400px;
+    background-size:cover;
+    
+    display: flex; /*organiza a caixa na horizontal, um ao lado do outro*/
+    flex-direction: column; /*coloca os itens um abaixo do outro, como coluna*/
+    justify-content: center; /*centraliza os itens no meio da coluna*/
+    align-items: flex-start; /*começa sempre da esquerda para a direita (em direção ao meio)*/
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    margin-left: 13px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.botao i{
+    margin-right: 6px;
+}
+
+.box-film{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-films{
+    margin-top: 5px;
+}
+
+.search {
+    display: flex;
+    width: 200px;
+    align-items: center;
+}
+
+.fas {
+    margin: 0px 10px;
+    font-size: 20px;
+}
